@@ -1,0 +1,42 @@
+This program implements a version of the Sternberg
+working memory test (Sternberg 1966, 1975).
+
+The test proceeds as follows:
+
+Subject sees a series of letters to "encode" into
+  memory (by default, these are green)
+The screen goes blank, and then a single "probe"
+  letter appears (by default, this is white)
+The subject judges whether the "probe" letter was
+  a member of the set that was recently encoded
+The subject presses a key to indicate thier
+  response, either "yes" (by default, "f") or "no"
+  (by default, "j")
+The screen goes blank, and the next probe letter
+  is presented, until it is time to show a new
+  set to encode.
+Subjects are scored by both accuracy and speed of
+  response.
+
+Many parameters controlling difficulty and duration
+are adjustable in the initial GUI.
+
+When the program is finished, data is saved to a
+pair of text files, based on the "username" set
+by the GUI (default "Subject"). The *.ana file
+contains the trial-by-trial breakdown in 
+performance, and can be used for detailed analysis.
+The *.sum file contains an overview of performance,
+broken down by the different set lengths.
+
+Both text files can be opened in Excel or Matlab.
+
+References:
+
+Sternberg, S. “High-speed Scanning in Human Memory.” Science 
+  (New York, N.Y.) 153, no. 3736 (August 5, 1966): 652–654.
+
+Sternberg, Saul. “Memory Scanning: New Findings and Current 
+  Controversies.” The Quarterly Journal of Experimental 
+  Psychology 27, no. 1 (1975): 1–32. 
+  doi:10.1080/14640747508400459.
